@@ -2,7 +2,7 @@
 <!-- ナビゲーションバーをダークテーマで設定 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <!-- タイトル -->
-  <a class="navbar-brand" href="#">Notion</a>
+  <router-link to="/main" class="navbar-brand">Notion</router-link>
 
   <!-- 画面サイズに応じて折りたたむ設定 -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@
     <ul class="navbar-nav">
       <!-- ノートリストページへのリンク -->
       <li class="nav-item">
-        <a class="nav-link" href="#"><font-awesome-icon icon="fa-solid fa-file-lines" /> ノートリスト</a>
+        <a class="nav-link" href="/main"><font-awesome-icon icon="fa-solid fa-file-lines" /> ノートリスト</a>
       </li>
 
       <!-- 学習用ページへのリンク -->
@@ -23,9 +23,9 @@
           <font-awesome-icon icon="fa-solid fa-user-graduate" /> 学習用ページ
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">学習1</a></li>
-          <li><a class="dropdown-item" href="#">学習2</a></li>
-          <li><a class="dropdown-item" href="#">学習3</a></li>
+          <li><a class="dropdown-item" href="/study/binding">学習1</a></li>
+          <li><a class="dropdown-item" href="/study/directive">学習2</a></li>
+          <li><a class="dropdown-item" href="/study/event">学習3</a></li>
         </ul>
       </li>
     </ul>
